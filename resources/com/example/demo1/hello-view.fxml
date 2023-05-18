@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <children>
+      <TableView fx:id="userTable" prefHeight="294.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="firstName" prefWidth="115.19997864961624" text="First name" />
+          <TableColumn fx:id="lastName" prefWidth="112.79998779296875" text="Last name" />
+            <TableColumn fx:id="email" prefWidth="151.2000274658203" text="Email" />
+            <TableColumn fx:id="imagelink" prefWidth="220.0" text="Image link" />
+            <TableColumn fx:id="ip_address" prefWidth="144.800048828125" text="IP address" />
+        </columns>
+      </TableView>
+      <TableView fx:id="passedTable" layoutX="407.0" prefHeight="294.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="passedFirstName" prefWidth="75.0" text="First Name" />
+          <TableColumn fx:id="passedLastName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="passedEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="passedImageLink" prefWidth="75.0" text="Image Link" />
+            <TableColumn fx:id="passedIp" prefWidth="75.0" text="IP" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#onLoadDataButtonPressed" prefHeight="26.0" prefWidth="82.0" text="Load " />
+      <Button layoutX="407.0" layoutY="311.0" mnemonicParsing="false" onAction="#onRemoveRowPressed" text="Remove Row" />
+      <Button layoutX="692.0" layoutY="311.0" mnemonicParsing="false" onAction="#onRemoveAllPressed" text="Remove All" />
+   </children>
+</AnchorPane>
